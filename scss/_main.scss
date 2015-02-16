@@ -1,0 +1,54 @@
+@mixin in{
+	width:960px;
+	margin:0 auto;
+}
+
+@mixin clear{
+	&:after{
+		content:'.';
+		visibility: hidden;
+		height:0;
+		display: block;
+		clear: both;
+	}
+}
+
+
+@mixin spriter($dir,$sname,$dsp:"def"){
+		background: sprite($dir, #{$sname});
+		@include sprite-dimensions($dir, #{$sname});
+		@if $dsp !="def" {display:$dsp}
+		@else{};
+}
+
+
+
+.topline{
+	@include clear;
+	background:$bg-generel;
+	.topline__in{
+		@include in;
+		.topline__block{
+		width: 270px;
+		height: 34px;
+		float:right;
+		border:1px solid #f4d4a0;
+			.topline__subscribe{
+				line-height: 34px;
+				margin-left:20px;
+			}
+			.topline__social{
+				.fb{
+					@include spriter($top-social,facebook,block);
+				}
+				.tw{
+					@include spriter($top-social,twitter,block);
+				}
+				.rss{
+					@include spriter($top-social,rss,block);
+				}
+			}
+		}
+	}
+}
+

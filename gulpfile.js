@@ -12,6 +12,8 @@ gulp.task('sass', function () {
         .pipe(compass({
             sassDir: 'scss',
             cssDir: '.',
+            imagesDir: 'img',
+            javascriptsDir: 'js',
             force: true
         }))
         .pipe(rename("style.css"))
