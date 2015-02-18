@@ -3,4 +3,13 @@
 }
 body{
 	font:13px/20px Arial, Verdana, sans-serif;
+	background:$bg-generel;
+}
+
+div img{
+	vertical-align:bottom;
+}
+
+a{
+	text-decoration:none;
 }

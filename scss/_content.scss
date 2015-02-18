@@ -1,0 +1,12 @@
+.section_title{
+	font:20px $bebas;
+	color:#0d0d0d;
+	border-bottom:1px solid #dadada;
+	padding-bottom:10px;
+	margin-bottom:30px;
+}
+
+section{
+	margin-bottom:60px;
+	@include clear;
+}

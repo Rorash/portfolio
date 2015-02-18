@@ -21,13 +21,11 @@
   <div class="topline">
      <div class="topline__in">
      <div class="topline__block">
-        <div class="topline__subscribe">Subscribe Now</div>
+      <span>Subscribe Now</span>
         <div class="topline__social">
-          <ul>
-            <li><a href="#" class="fb"></a></li>
-            <li><a href="#" class="tw"></a></li>
-            <li><a href="#" class="rss"></a></li>
-          </ul>
+            <a href="#" class="fb"></a>
+            <a href="#" class="tw"></a>
+            <a href="#" class="rss"></a>
         </div>
       </div>
       </div>
@@ -39,7 +37,7 @@
     <div class="site_header__in">
        <div class="site_header__logo">
          <p class="logo_big"><span>News</span>Plex</p>
-         <small>Premium magazine theme</small>
+         <p class="small">Premium magazine theme</p>
        </div>
       <div class="site_header__banner">
         <img src="http://placehold.it/468x60" alt="">
@@ -51,7 +49,7 @@
   <!-- begin site_nav  -->
   <nav class="site_nav">
     <div class="site_nav__in">
-      <ul>
+      <ul class="hor_nav">
         <li><a href="#">Homepage</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Full width</a></li>
@@ -65,39 +63,41 @@
   <!-- end site_nav -->
   
   <!-- begin slider  -->
-  <div class="slider">
-    <div class="slider__entry">
-        <div class="entry_photo"><img src="http://placehold.it/670x340" alt=""></div>
-        <div class="entry_desc">
-          <h3 class="entry__title">Temporibus autem quibusdam et aut officiis</h3>
-          <p class="entry__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae...<a class="more">read more</a></p>
-        </div>
-    </div>
-    <div class="slider__switsher">
-      <ul>
-        <li class="is_active"><i></i><a href="#">
-          <img src="http://placehold.it/50x50" alt="">
-          <p class="entry_title">Temporibus autem quibusdam et aut officiis</p>
-          <p class="entry_meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></p>
-        </a></li>
-        <li><i></i><a href="#">
-          <img src="http://placehold.it/50x50" alt="">
-          <p class="entry_title">Temporibus autem quibusdam et aut officiis</p>
-          <p class="entry_meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></p>
-        </a></li>
-        <li><i></i><a href="#">
-          <img src="http://placehold.it/50x50" alt="">
-          <p class="entry_title">Temporibus autem quibusdam et aut officiis</p>
-          <p class="entry_meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></p>
-        </a></li>
-        <li><i></i><a href="#">
-          <img src="http://placehold.it/50x50" alt="">
-          <p class="entry_title">Temporibus autem quibusdam et aut officiis</p>
-          <p class="entry_meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></p>
-        </a></li>
-      </ul>
-    </div>
-  </div>
+  <section class="slider"><div class="slider__in">
+      <div class="slider_entry">
+          <img class="entry_photo" src="http://placehold.it/670x340" alt="">
+          <div class="entry_desc">
+            <h3 class="entry_title">Temporibus autem quibusdam et aut officiis</h3>
+            <p class="entry_text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae...</p><a href="#" class="more">read more</a>
+          </div>
+      </div>
+      <div class="tester1"></div>
+      <div class="tester2"></div>
+      <div class="slider_switsher">
+        <ul>
+          <li class="is-active">
+            <a href="#card" class="encirc"><img src="http://placehold.it/50x50" alt="">
+            <p class="entry_title">Temporibus autem quibusdam et aut officiis</p>
+            <p class="entry_meta">Posted on 4th Dec, 2010 by <span class="author_link">Admin</span></p></a>
+          </li>
+          <li>
+            <a href="#card" class="encirc"><img src="http://placehold.it/50x50" alt="">
+            <p class="entry_title">Temporibus autem quibusdam et aut officiis</p>
+            <p class="entry_meta">Posted on 4th Dec, 2010 by <span class="author_link">Admin</span></p></a>
+          </li>
+          <li>
+            <a href="#card" class="encirc"><img src="http://placehold.it/50x50" alt="">
+            <p class="entry_title">Temporibus autem quibusdam et aut officiis</p>
+            <p class="entry_meta">Posted on 4th Dec, 2010 by <span class="author_link">Admin</span></p></a>
+          </li>
+          <li>
+            <a href="#card" class="encirc"><img src="http://placehold.it/50x50" alt="">
+            <p class="entry_title">Temporibus autem quibusdam et aut officiis</p>
+            <p class="entry_meta">Posted on 4th Dec, 2010 by <span class="author_link">Admin</span></p></a>
+          </li>
+        </ul>
+      </div></div>
+  </section>
   <!-- end slider -->
   <!-- begin l  -->
   <div class="l">
@@ -109,25 +109,31 @@
         <h2 class="section_title">Featured articles</h2>
         <div class="articles_cards">
            <div class="card">
-            <div class="img"><img src="http://placehold.it/194x104" alt=""></div>
-            <div class="title">Sed ut perspiciatis unde omnis iste</div>
-            <div class="comments">21</div>
-            <div class="meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></div>
-            <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat...</p>
-            <a href="#" class="more">Read more</a>
-          </div>
-          <div class="card">
-            <div class="img"><img src="http://placehold.it/194x104" alt=""></div>
-            <div class="title">Sed ut perspiciatis unde omnis iste</duv>
-            <div class="comments">21</div>
+            <div class="img"><img src="http://placehold.it/210x120" alt=""></div>
+            <div class="card_top">
+              <div class="title">Sed ut perspiciatis unde omnis iste</div>
+                <a class="comments">21</a>
+            </div>
             <div class="meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></div>
             <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat...</p>
             <a href="#" class="more">Read more</a>
           </div>
            <div class="card">
-            <div class="img"><img src="http://placehold.it/194x104" alt=""></div>
-            <div class="title">Sed ut perspiciatis unde omnis iste</duv>
-            <div class="comments">21</div>
+            <div class="img"><img src="http://placehold.it/210x120" alt=""></div>
+            <div class="card_top">
+              <div class="title">Sed ut perspiciatis unde omnis iste</div>
+                <a class="comments">21</a>
+            </div>
+            <div class="meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></div>
+            <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat...</p>
+            <a href="#" class="more">Read more</a>
+          </div>
+           <div class="card">
+            <div class="img"><img src="http://placehold.it/210x120" alt=""></div>
+            <div class="card_top">
+              <div class="title">Sed ut perspiciatis unde omnis iste</div>
+                <a class="comments">21</a>
+            </div>
             <div class="meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></div>
             <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat...</p>
             <a href="#" class="more">Read more</a>
@@ -140,33 +146,41 @@
       <section class="photos">
         <h2 class="section_title">News in photos</h2>
         <div class="photo__big">
-            <div class="photo"><img src="http://placehold.it/270x300" alt=""></div>
-            <div class="photo_desc">
-              <h3 class="photo__title">Temporibus autem quibusdam et aut officiis</h3>
-              <p class="photo__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae...<a class="more">read more</a></p>
+            <div class="entry_photo"><img src="http://placehold.it/270x300" alt=""></div>
+            <div class="entry_desc">
+              <h3 class="entry_title">Sed ut perspiciatis unde omnis</h3>
+              <p class="entry_text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae...</p><a class="more">read more</a>
             </div>
         </div>
         <div class="photo__enties">
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
-          <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+          <div class="line">
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+          </div>
+          <div class="line">
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+          </div>
+          <div class="line">
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+          </div>
+          <div class="line">
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+            <a href="#"><img src="http://placehold.it/60x60" alt=""></a>
+          </div>
         </div>
 
       </section>
@@ -176,21 +190,22 @@
       <section class="updates">
         <h2 class="section_title">News in photos</h2>
         <div class="switcher">
-          <ul>
+          <ul class="nav">
             <li class="is_active"><a href="#">Design news</a></li>
             <li><a href="#">Contents</a></li>
             <li><a href="#">Global</a></li>
             <li><a href="#">Programming</a></li>
             <li class="popular"><a href="#">Most popular</a></li>
           </ul>
-          <div class="switcher__card">
+          <div class="switcher_card">
             <div class="title">Sed ut perspiciatis unde omnis iste</div>
             <div class="meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></div>
             <div class="img"><img src="http://placehold.it/184x134" alt=""></div>
-            <div class="comments">21</div>
             <div class="text"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
-            <a href="" class="cat_more">More from thic category</a>
-            <a href="#" class="more">Read more</a>
+            <div class="btns">
+              <a href="" class="cat_more">More from thic category</a>
+              <a href="#" class="more">Read more</a>
+            </div>
           </div>
         </div>
       </section>
@@ -201,25 +216,31 @@
         <h2 class="section_title">Recent articles</h2>
         <div class="articles_cards">
            <div class="card">
-            <div class="img"><img src="http://placehold.it/194x104" alt=""></div>
-            <div class="title">Sed ut perspiciatis unde omnis iste</div>
-            <div class="comments">21</div>
-            <div class="meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></div>
-            <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat...</p>
-            <a href="#" class="more">Read more</a>
-          </div>
-          <div class="card">
-            <div class="img"><img src="http://placehold.it/194x104" alt=""></div>
-            <div class="title">Sed ut perspiciatis unde omnis iste</duv>
-            <div class="comments">21</div>
+            <div class="img"><img src="http://placehold.it/210x120" alt=""></div>
+            <div class="card_top">
+              <div class="title">Sed ut perspiciatis unde omnis iste</div>
+                <a class="comments">21</a>
+            </div>
             <div class="meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></div>
             <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat...</p>
             <a href="#" class="more">Read more</a>
           </div>
            <div class="card">
-            <div class="img"><img src="http://placehold.it/194x104" alt=""></div>
-            <div class="title">Sed ut perspiciatis unde omnis iste</duv>
-            <div class="comments">21</div>
+            <div class="img"><img src="http://placehold.it/210x120" alt=""></div>
+            <div class="card_top">
+              <div class="title">Sed ut perspiciatis unde omnis iste</div>
+                <a class="comments">21</a>
+            </div>
+            <div class="meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></div>
+            <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat...</p>
+            <a href="#" class="more">Read more</a>
+          </div>
+           <div class="card">
+            <div class="img"><img src="http://placehold.it/210x120" alt=""></div>
+            <div class="card_top">
+              <div class="title">Sed ut perspiciatis unde omnis iste</div>
+                <a class="comments">21</a>
+            </div>
             <div class="meta">Posted on 4th Dec, 2010 by <a href="#" class="author_link">Admin</a></div>
             <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat...</p>
             <a href="#" class="more">Read more</a>
@@ -231,17 +252,17 @@
       <section class="recent_comments">
         <h2 class="section_title">Recent comments</h2>
         <div class="comment">
-            <div class="comment_photo"><img src="http://placehold.it/325x250" alt=""></div>
-            <div class="comment_desc">
-              <h3 class="comment_title"><a href="#">Sed ut perspiciatis unde omnis</a></h3>
-              <p class="comment_text">Itaque earum rerum hic tenetur a sapiente...<a class="more">17 comments</a></p>
+            <div class="entry_photo"><img src="http://placehold.it/325x250" alt=""></div>
+            <div class="entry_desc">
+              <h3 class="entry_title"><a href="#">Sed ut perspiciatis unde omnis</a></h3>
+              <p class="entry_text">Itaque earum rerum hic tenetur a sapiente...</p><a class="more">17 comments</a>
             </div>
         </div>
         <div class="comment">
-            <div class="comment_photo"><img src="http://placehold.it/325x250" alt=""></div>
-            <div class="comment_desc">
-              <h3 class="comment_title"><a href="#">Sed ut perspiciatis unde omnis</a></h3>
-              <p class="comment_text">Itaque earum rerum hic tenetur a sapiente...<a class="more">31 comments</a></p>
+            <div class="entry_photo"><img src="http://placehold.it/325x250" alt=""></div>
+            <div class="entry_desc">
+              <h3 class="entry_title"><a href="#">Sed ut perspiciatis unde omnis</a></h3>
+              <p class="entry_text">Itaque earum rerum hic tenetur a sapiente...</p><a class="more">31 comments</a>
             </div>
         </div>
       </section>
@@ -252,22 +273,22 @@
     <!-- begin sidebar  -->
     <div class="sidebar">
       <!-- begin side__bannders  -->
-      <section class="side__bannders">
+      <section class="side_banners">
         <div class="banner"><a href="#"><img src="http://placehold.it/125x125" alt=""></a></div>
         <div class="banner"><a href="#"><img src="http://placehold.it/125x125" alt=""></a></div>
       </section>
       <!-- end side__bannders -->
 
       <!-- begin side__social  -->
-      <section class="side__social">
+      <section class="side_social">
         <div class="social_item">
-          <a href="#" class="social_rss"></a>
+          <a href="#" class="ico rss-b"></a>
           <div class="follow_num">1203</div>
           <div class="follow_name">Subscribers</div>
         </div>
 
         <div class="social_item">
-          <a href="#" class="social_twitter"></a>
+          <a href="#" class="ico tw-b"></a>
           <div class="follow_num">2107</div>
           <div class="follow_name">Followers</div>
         </div>
@@ -275,7 +296,7 @@
       <!-- end side__social -->
 
       <!-- begin side_search  -->
-      <section class="side__search">
+      <section class="side_search">
         <form action="#">
           <input type="text" placeholder="type and hit enter">
         </form>
@@ -283,8 +304,9 @@
       <!-- end side_search -->
 
       <!-- begin side__nav  -->
-      <section class="side__nav">
+      <section class="side_nav">
         <nav>
+        <ul>
           <li class="is-active"><a href="#">Design and Interfaces <i></i></a></li>
           <li><a href="#">Design and Interfaces <i></i></a></li>
           <li><a href="#">Design and Interfaces <i></i></a></li>
@@ -292,18 +314,19 @@
           <li><a href="#">Design and Interfaces <i></i></a></li>
           <li><a href="#">Design and Interfaces <i></i></a></li>
           <li><a href="#">Design and Interfaces <i></i></a></li>
+        </ul>
         </nav>
       </section>
       <!-- end side__nav -->
       <!-- begin side__switcher  -->
-      <section class="side__switcher">
-        <div class="switcher__in">
-          <ul>
-            <li class="is_active"><a href="#">Recent articles</a></li>
-            <li><a href="#">Popular articles</a></li>
-            <li><a href="#">Latest video</a></li>
-          </ul>
-          <div class="switcher__card">
+      <section class="side_switcher">
+        <div class="switcher">
+          <ul class="nav"><!--
+            --><li class="is_active"><a href="#">Recent articles</a></li><!--
+            --><li><a href="#">Popular articles</a></li><!--
+            --><li><a href="#">Latest video</a></li><!--
+      --></ul>
+          <div class="switcher_card">
             <div class="card_entry">
               <div class="entry_photo"><img src="http://placehold.it/60x60" alt=""></div>
               <div class="entry_title">Duis aute irure dolor in reprehenderit</div>
@@ -342,7 +365,7 @@
       </section>
       <!-- end side_tweet -->
       <!-- begin side__bannders  -->
-      <section class="side__bannders">
+      <section class="side_banners">
         <div class="banner"><a href="#"><img src="http://placehold.it/125x125" alt=""></a></div>
         <div class="banner"><a href="#"><img src="http://placehold.it/125x125" alt=""></a></div>
       </section>
@@ -352,7 +375,7 @@
   </div>
   <!-- end l -->
   <!-- begin site-footer  -->
-  <footer class="site-footer">
+  <footer class="site_footer">
     <div class="footer__in">
       <!-- begin footer_latest  -->
       <div class="footer_latest">

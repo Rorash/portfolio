@@ -1,0 +1,6 @@
+.content{
+	@include gen-col;
+}
+.sidebar{
+	@include sidebar;
+}

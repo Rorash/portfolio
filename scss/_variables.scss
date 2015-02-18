@@ -1,7 +1,17 @@
 //Colors
 $bg-generel:#f1e9db;
+$nav-hover:#f4cb89;
+$lnk:#d9042b;
+$lnkh:#a70220;
 
+//Fonts
+$bebas: "Bebas", Arial, Verdana, sans-serif;
+$standart: Arial, Verdana, sans-serif;
 
 
 //Sprite-maps
 $top-social: sprite-map("topline-social/*.png");
+$social:sprite-map("social/*.png");
+
+//Sizes
+$snav-h:60px;
