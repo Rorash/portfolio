@@ -10,3 +10,11 @@ section{
 	margin-bottom:60px;
 	@include clear;
 }
+
+footer.site_footer{
+	color:#b7b7b7;
+	.section_title{
+		color:#fff;
+		border:none;
+	}
+}

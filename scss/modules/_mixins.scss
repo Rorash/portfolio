@@ -102,3 +102,46 @@
             }
     }
 }
+
+@mixin standart-meta-img($desch:70px,$titlefs:14px,$desfs:11px,$overh:1,$textw:185px){
+    
+    .entry_photo {
+        display: block;
+        margin: -1px 0 0 -1px;
+    }
+    .entry_desc {
+        width: inherit;
+        height: $desch;
+        background: rgba(12, 13, 15, 0.85);
+        position: absolute;
+        bottom: 0;
+        color: white;
+        padding: (19-((20-$titlefs)/2)) 20px (20-((20-$desfs)/2)) 20px;
+        line-height: 20px;
+        .entry_title {
+            a{color:#fff;}
+            font-size: $titlefs;
+            font-weight: bold;
+            padding-bottom: (10-(((20-$titlefs)/2)+((20-$desfs)/2)));
+        }
+        .entry_text {
+            font-size: $desfs;
+             height: $overh*20px;
+             float:left;
+             @if $overh==1{
+                white-space: nowrap;
+                width: $textw;
+             }
+             overflow: hidden;
+             text-overflow: ellipsis;
+        }
+            .more {
+                color: $lnk;
+                font-weight: bold;
+                text-decoration: none;
+                &:hover {
+                    color: $lnkh;
+                }
+            }
+    }
+}

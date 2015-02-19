@@ -276,7 +276,11 @@
         overflow: hidden;
         position: relative;
         width: 270px;
-        @include meta-img;
+        @include standart-meta-img;
+        .entry_desc{
+        	padding-left:11px;
+        	padding-right:11px;
+        }
     }
     .photo__enties {
         float: left;
@@ -401,7 +405,7 @@
         &:last-child {
             margin-right: 0;
         }
-        @include meta-img;
+        @include standart-meta-img;
     }
 }
 
@@ -468,6 +472,7 @@
                 border: 1px solid #f0d5a9;
                 background: #faefdc;
                 position: relative;
+                margin-bottom: 3px;
                 &:after {
                     content: '';
                     border: 7px solid transparent;
@@ -482,7 +487,7 @@
                     width: 270px;
                     height: 40px;
                     line-height: 40px;
-                    padding-left: 20px; 
+                    padding-left: 20px;
                 }
             }
         }
@@ -530,20 +535,104 @@
     }
 }
 
-footer.site_footer{
-	.footer__in{
-		@include in;
-		border:1px solid #400404;
-		border-left:none;
-		border-bottom:none;
-		position:relative;
-		&:before{
-			content: '';
-			width: 100%;
-			border-top:10px solid #3d3f41;
-			position:absolute;
-			top:0;
-			display: block;
+.side_tweet{
+	a{
+		color: $lnk;
+		&:hover{
+			color: $lnkh;
 		}
 	}
+	.tweet_entry{
+		border:1px solid #dadada;
+		background:white;
+		padding:15px 20px;
+		a{
+			font-weight: bold;
+		}
+	}
+	.twitter_link{
+		font-size: 11px;
+		padding-top:5px;
+		float:right;
+	}
+}
+
+footer.site_footer {
+    background: url(img/footer-bg.png);
+    .footer__in {
+        padding-top: 58px;
+        a {
+            color: $lnk;
+            &:hover {
+                color: $lnkh;
+            }
+        }
+        @include in;
+        border-top: 1px solid #400404;
+        position: relative;
+        &:before {
+            content: '';
+            width: 100%;
+            border-top: 1px solid #3d3f41;
+            position: absolute;
+            top: 0;
+            display: block;
+        }
+        .infoline {
+            @include clear;
+            & > section {
+                float: left;
+                margin-right: 38px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            .footer_latest {
+                width: 295px;
+            }
+            .footer_recent {
+                width: 180px;
+            }
+            .footer_comments {
+                width: 210px;
+            }
+            .footer_tags {
+                width: 160px;
+                text-align: justify;
+                a {
+                    display: inline-block;
+                    color: white;
+                    line-height: 28px;
+                    font-size: 13px;
+                    &.is_popular {
+                        color: white;
+                        font-weight: bold;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .bottom_line {
+        	@include clear;
+        	padding-top:21px;
+        	.copy{
+        		width: 50%;
+        		float: left;
+        	}
+            border-top: 1px solid #33383d;
+            .bottom_social {
+            	position:relative;
+            	float:right;
+            	a{
+            		display: block;
+            		float:left;
+            	}
+                @each $s in del, flkr, fb, tw, stu {
+                    .#{$s} {
+                        @include spriter($social, $s);
+                    }
+                }
+            }
+        }
+    }
 }

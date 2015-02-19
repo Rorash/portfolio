@@ -2,5 +2,6 @@
 	@include gen-col;
 }
 .sidebar{
+	padding-top: 36px;
 	@include sidebar;
 }
