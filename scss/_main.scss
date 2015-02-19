@@ -66,15 +66,41 @@
             line-height: $snav-h;
             li {
                 display: inline-block;
+                position:relative;
                 a {
                     text-decoration: none;
                     font: 15px $bebas;
                     color: #fff;
                     margin-right: 40px;
+                                    &:hover+ul{
+                	display: block;
+                }
                     &:hover {
                         color: $nav-hover;
                     }
                 }
+                ul {
+                	background:#1a1d21;
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 60px;
+                    z-index: 100;
+                    width: 180px;
+                    li{
+                    	height: 100%;
+                    	display: block;
+                    	border-top:1px solid #35373b;
+                   		a{
+                   			display: block;
+                   			padding-left:20px;
+                   			line-height: 38px;
+                   		}
+						
+                    }
+                    
+                }
+
             }
         }
     }
@@ -277,9 +303,9 @@
         position: relative;
         width: 270px;
         @include standart-meta-img;
-        .entry_desc{
-        	padding-left:11px;
-        	padding-right:11px;
+        .entry_desc {
+            padding-left: 11px;
+            padding-right: 11px;
         }
     }
     .photo__enties {
@@ -469,7 +495,7 @@
         ul {
             list-style: none;
             li {
-                border: 1px solid #f0d5a9;
+                
                 background: #faefdc;
                 position: relative;
                 margin-bottom: 3px;
@@ -482,12 +508,52 @@
                     right: 20px;
                 }
                 a {
+                	border: 1px solid #f0d5a9;
                     color: #303030;
                     display: inline-block;
                     width: 270px;
                     height: 40px;
                     line-height: 40px;
                     padding-left: 20px;
+                }
+                &.is_active{
+                	>a{
+               	 	font-weight: bold;
+                	}
+                	&:after{
+                    content: '';
+                    border: 7px solid transparent;
+                    border-top: 7px solid #303030;
+                    position: absolute;
+					top: 17px;
+					right: 25px;
+                	}
+                }
+                ul{
+                	margin-top:3px;
+                	li{
+						background:white;
+						&:after{
+							border:none;
+						}
+                	}
+                							.current{
+                								
+														&:after{
+								content: '';
+								position: absolute;
+								left: 0;
+								top:0;
+								height: 40px;
+								width: 10px;
+								background:$lnk;
+							}
+							a{
+								color:$lnk;
+								font-weight: bold;
+								padding-left:30px;
+							}
+						}
                 }
             }
         }
@@ -535,26 +601,26 @@
     }
 }
 
-.side_tweet{
-	a{
-		color: $lnk;
-		&:hover{
-			color: $lnkh;
-		}
-	}
-	.tweet_entry{
-		border:1px solid #dadada;
-		background:white;
-		padding:15px 20px;
-		a{
-			font-weight: bold;
-		}
-	}
-	.twitter_link{
-		font-size: 11px;
-		padding-top:5px;
-		float:right;
-	}
+.side_tweet {
+    a {
+        color: $lnk;
+        &:hover {
+            color: $lnkh;
+        }
+    }
+    .tweet_entry {
+        border: 1px solid #dadada;
+        background: white;
+        padding: 15px 20px;
+        a {
+            font-weight: bold;
+        }
+    }
+    .twitter_link {
+        font-size: 11px;
+        padding-top: 5px;
+        float: right;
+    }
 }
 
 footer.site_footer {
@@ -613,20 +679,20 @@ footer.site_footer {
             }
         }
         .bottom_line {
-        	@include clear;
-        	padding-top:21px;
-        	.copy{
-        		width: 50%;
-        		float: left;
-        	}
+            @include clear;
+            padding-top: 21px;
+            .copy {
+                width: 50%;
+                float: left;
+            }
             border-top: 1px solid #33383d;
             .bottom_social {
-            	position:relative;
-            	float:right;
-            	a{
-            		display: block;
-            		float:left;
-            	}
+                position: relative;
+                float: right;
+                a {
+                    display: block;
+                    float: left;
+                }
                 @each $s in del, flkr, fb, tw, stu {
                     .#{$s} {
                         @include spriter($social, $s);
