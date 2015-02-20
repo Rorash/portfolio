@@ -306,6 +306,9 @@
         .entry_desc {
             padding-left: 11px;
             padding-right: 11px;
+            .entry_text{
+            	width: 180px;
+            }
         }
     }
     .photo__enties {
@@ -646,6 +649,8 @@ footer.site_footer {
         }
         .infoline {
             @include clear;
+                            margin-bottom: 18px;
+                height: 302px;
             & > section {
                 float: left;
                 margin-right: 38px;

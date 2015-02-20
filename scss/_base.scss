@@ -1,7 +1,7 @@
 *{
 	box-sizing: border-box;
 }
-html,body{
+html,body,.wrap{
 	height: 100%;
 }
 body{
@@ -15,4 +15,9 @@ div img{
 
 a{
 	text-decoration:none;
+	cursor:pointer;
 }
+body > .wrap {height: auto; min-height: 100%;};
+footer {position: relative;
+	height: 565px;
+	clear:both;} 
